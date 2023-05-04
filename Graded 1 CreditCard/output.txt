@@ -1,0 +1,61 @@
+
+********************* PART 2 *********************
+
+
+********************* PART 3 *********************
+
+5469745554655424 - 12/2023
+Balance: 100
+Last bought item:
+
+9378123523132222 - 3/2025
+Balance: 42
+Last bought item:
+
+3554234332232132 - 3/2025
+Balance: 100
+Last bought item:
+
+7231354387862154 - 3/2025
+Balance: 123
+Last bought item:
+
+New expiration date - month:1 2024
+New expiration date - year: 5469745554655424 - 1/2024
+Balance: 100
+Last bought item:
+
+New expiration date - month:1 2024
+New expiration date - year: 9378123523132222 - 3/2025
+Balance: 42
+Last bought item:
+
+********************* PART 4 *********************
+
+Card 1 has an earlier expiration date than Card 2
+
+********************* PART 5 *********************
+
+5469745554655424 - 1/2024
+Balance: 100
+Last bought item:
+
+Buying a PlayStation
+5469745554655424 - 1/2024
+Balance: 89
+Last bought item: PlayStation
+
+Buying a PlayStation 5 times
+5469745554655424 - 1/2024
+Balance: 34
+Last bought item: PlayStation
+
+********************* PART 6 *********************
+
+5469745554655424 - 11/2024
+Balance: 34
+Last bought item: PlayStation
+
+5469745554655424 - 3/2025
+Balance: 34
+Last bought item: PlayStation
