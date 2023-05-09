@@ -14,12 +14,11 @@ Warlock::Warlock(const std::string& name, int max_health_points, int spell_slots
 
 void Warlock::Attack(Character& character)
 {
-	for (int i = spell_slots - 1; i >= 0; --i) {
-		if (spells[i] != nullptr) {
-			spells[i]->Cast(*this, character);
-			spells[i] = nullptr;
-			return;
-		}
+	if (prepared_spells > 0) {
+		spells[prepared_spells - 1]->Cast(*this, character);
+		spells[prepared_spells - 1] = nullptr;
+		--prepared_spells;
+		return;
 	}
 	Character::Attack(character);
 }
@@ -27,6 +26,9 @@ void Warlock::Attack(Character& character)
 void Warlock::Rest(int hours)
 {
 	Character::Rest(hours);
+	if (prepared_spells == spell_slots) {
+		return;
+	}
 	Spell* s;
 	if (hours % 2 == 0) {
 		s = new ArcaneMissilesSpell();
@@ -34,19 +36,15 @@ void Warlock::Rest(int hours)
 	else {
 		s = new HealingTouchSpell();
 	}
-	for (int i = 0; i < spell_slots; ++i) {
-		if (spells[i] == nullptr) {
-			spells[i] = s;
-			return;
-		}
-	}
-	delete s; //in case no free space in spells
+
+	spells[prepared_spells] = s;
+	++prepared_spells;
 }
 
 Character* Warlock::Clone()
 {
 	Warlock* cpy = new Warlock(name, max_health_points, spell_slots);
-	for (int i = 0; i < spell_slots; ++i) {
+	for (int i = 0; i < prepared_spells; ++i) {
 		if (spells[i] == nullptr) {
 			break;
 		}
@@ -62,6 +60,7 @@ Character* Warlock::Clone()
 	}
 
 	cpy->prepared_spells = this->prepared_spells;
+	cpy->current_health_points = this->current_health_points;
 
 	return cpy;
 }
@@ -79,3 +78,4 @@ void Warlock::Serialize(std::ostream& os) const
 		}
 	}
 }
+
