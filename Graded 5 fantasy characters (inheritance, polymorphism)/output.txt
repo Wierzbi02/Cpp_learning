@@ -1,0 +1,51 @@
+
+******************* PART 1 *******************
+
+Valeera (HP: 9/9)
+Anduin (HP: 7/7)
+
+Valeera (HP: 7/9)
+Anduin (HP: 0/7)
+
+Valeera (HP: 5/9)
+Anduin (HP: 6/7)
+
+******************* PART 2 *******************
+
+Garrosh (HP: 6/6) - class: Warrior(2)
+
+Garrosh (HP: 6/6) - class: Warrior(0)
+
+Garrosh (HP: 3/7) - class: Warrior(0)
+
+******************* PART 3 *******************
+
+Magni (HP: 6/6) - class: Warrior(3)
+
+Magni (HP: 0/6) - class: Warrior(0)
+Garrosh (HP: 3/7) - class: Warrior(0)
+
+******************* PART 4 *******************
+
+ArcaneMissiles
+HealingTouch
+
+Dummy1 (HP: 8/8)
+Dummy2 (HP: 9/10)
+
+******************* PART 5 *******************
+
+Gul'dan (HP: 8/8)- class: Warlock, prepared spells:
+Tamsin (HP: 7/7)- class: Warlock, prepared spells:
+
+Gul'dan (HP: 8/8)- class: Warlock, prepared spells: ArcaneMissiles ArcaneMissiles
+Tamsin (HP: 7/7)- class: Warlock, prepared spells: ArcaneMissiles HealingTouch ArcaneMissiles
+
+Gul'dan (HP: 5/8)- class: Warlock, prepared spells:
+Tamsin (HP: 2/7)- class: Warlock, prepared spells: ArcaneMissiles
+
+******************* PART 6 *******************
+
+Gul'dan (HP: 7/8)- class: Warlock, prepared spells: HealingTouch ArcaneMissiles
+
+Gul'dan (HP: 7/8)- class: Warlock, prepared spells: HealingTouch ArcaneMissiles
